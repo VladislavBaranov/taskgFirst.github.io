@@ -1,0 +1,18 @@
+html {
+    overflow: hidden;
+    height: 100%;
+    background: olive;
+    width: 100%;
+}
+
+#canvas {
+    background: url('image/background.jpg') repeat;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#canvas.playing {
+    cursor: url('image/aim_red.png') ,auto !important;
+}
+

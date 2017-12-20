@@ -1,0 +1,274 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background: #e7ecec;
+  color: #e7ecec;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  color: #B8332F;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+a:hover,
+a:focus{
+  color: #e7ecec;
+  border-bottom: .1em solid #B8332F;
+}
+
+.header {
+  background: #373737;
+  color: #B8332F;
+  width: 100%;
+  height: 5em;
+  line-height: 5em;
+}
+
+.header a{
+  font-size: 1em;
+}
+
+.site-title {
+  float: left;
+  margin: 0 2em;
+  padding: 0 .5em;
+  height: 5em;
+  line-height: 5em;
+}
+
+.site-menu {
+  float: right;
+  padding: 0 2em;
+}
+
+.menu-item {
+  float: left;
+  padding: 0 .5em;
+  height: 5em;
+  line-height: 5em;
+}
+
+.site-title:hover,
+.menu-item:hover {
+  border-bottom: .2em solid #B8332F;
+  cursor: pointer;
+  color: #e7ecec;
+}
+
+.menu-item.selected,
+.menu-item.selected:hover {
+  border-bottom: .2em solid #B8332F;
+  background: #474747;
+  cursor: default;
+  color: #777777;
+  user-select: none;
+}
+
+.menu-icon {
+  display: none;
+  background:  ();
+  background-position:-32px 0;
+  float: right;
+  width: 32px;
+  height: 32px;
+  margin: 1em;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-icon:hover {
+  background-position: 0 0;
+}
+
+.banner,
+.game{
+  width: 95%;
+  margin: 1.5em auto;
+  background: #373737;
+}
+
+.banner-img,
+.game-img{
+  float: left;
+  width: 60%;
+  height: 0;
+  padding-top: 40%;
+  background: url('image/Captura.png') ;
+  background-size: cover;
+}
+
+
+.banner-img {
+  border-right: .5em solid #B8332F;
+}
+
+.hero-gen .game-img{
+  background: url('image/screenshot.jpg');
+  background-size: cover;
+  width: 50%;
+  padding-top: 28%;
+}
+
+.high .game-img {
+  background: url('image/controls.jpg');
+  background-size: cover;
+  width: 50%;
+  padding-top: 28%;
+}
+.banner-img.next{
+  background: url('image/soon.jpg');
+  background-size: cover;
+  padding-top: 33%;
+}
+
+.banner-text{
+  position: relative;
+  float: left;
+  padding: 2em 3em;
+  width: 40%;
+}
+
+.game-text {
+  position: relative;
+  float: left;
+  padding: .75em 3em;
+  border-top: .5em solid #B8332F;
+  width: 50%;
+}
+
+.right-tri {
+  position: absolute;
+  top: 3.5em;
+  left: 0;
+  width: 0; 
+  height: 0; 
+  border-top: 1.5em solid transparent;
+  border-bottom: 1.5em solid transparent;
+
+  border-left: 1.5em solid #B8332F;
+}
+
+.welcome{
+  width: 95%;
+  margin: 0 auto;
+  padding: 0 1em;
+  font-size: 1.25em;
+  color: #373737;
+  text-align: center;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.design {
+  width: 95%;
+  margin: 0 auto;
+  color: #373737;
+  text-align: center;
+  padding-bottom: 1.5em;
+}
+
+.design span {
+  display: inline-block;
+  padding-right: .5em;
+}
+
+.design a:hover {
+  color: #373737;
+}
+
+.mini-menu {
+  display: none;
+}
+
+a.disabled {
+  pointer-events: none; 
+  cursor: default;  
+  
+}
+
+@media screen and (max-width: 78em) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 56em) {
+  /*tablet*/
+  body {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  /*phone*/
+  /* .site-menu {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: inline;
+  }
+  .mini-menu {
+    display: inline-block;
+    float: right;
+    
+  } */
+  
+  
+  .mini-menu .menu-item {
+    width: 100%;
+    background: #373737;
+  }
+  
+  .mini-menu .menu-item.selected {
+    background: #474747;
+  }
+  
+  .banner-img{
+    width: 100%;
+    padding-top: 70%;
+    border-right: none;
+    border-bottom: .5em solid #B8332F;
+  }
+  .banner-text{
+    width: 100%;
+  }
+  .right-tri {
+    border: none;
+  }
+  .high .game-img,
+  .hero-gen .game-img{
+    width: 100%;
+    padding-top: 56%;
+  }
+  .game-text{
+    width: 100%;
+    padding-bottom: 3em;
+  }
+  .banner-img.next{
+    padding-top: 55%;
+  }
+}
