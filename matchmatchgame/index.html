@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script src="js/app.js"></script>
+    <title>Memory Game</title> 
+</head>
+
+<body onload="game.init()">
+<div id="game-memory">
+    <div class="playground"></div>
+    <div class="control-panel">
+        <div class="button" data-handler="easy">Easy</div>
+        <div class="button" data-handler="medium">Medium</div>
+        <div class="button" data-handler="hard">Hard</div>
+        <div class="button" data-handler="exit">Exit</div>
+        <div class="time"></div>
+        <div class="card-type">
+            <div data-type="front-cover-1" class="front-cover-1 active"></div>
+            <div data-type="front-cover-2" class="front-cover-2"></div>
+            <div data-type="front-cover-3" class="front-cover-3"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
